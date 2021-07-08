@@ -1,0 +1,112 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: content-box;
+}
+body {
+  background: linear-gradient(
+    173deg,
+    rgba(150, 177, 161, 1),
+    rgba(34, 38, 35, 0.7903536414565826)
+  );
+  display: grid;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.title {
+  text-align: center;
+  margin-top: 1rem;
+}
+.title p {
+  font-size: 1.1rem;
+  margin: 0.5rem;
+  color: white;
+  letter-spacing: 1px;
+}
+.covid {
+  background: rgba(34, 38, 35, 0.7903536414565826);
+  color: white;
+  margin: 1rem;
+  border-radius: 10px;
+  max-width: 600px;
+}
+
+.card-top {
+  height: 100px;
+  text-align: center;
+  display: grid;
+  padding-top: 1rem;
+}
+.card-top h3 {
+  color: red;
+  font-size: 3rem;
+  animation: pulsing 1.5s infinite;
+}
+.card-top h4 {
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+.card-button {
+  min-height: 200px;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  row-gap: 1rem;
+  padding: 0.5rem;
+}
+.card-button h4 {
+  font-size: 1.1rem;
+}
+
+.card-button p {
+  justify-self: end;
+  font-size: 1.2rem;
+}
+.vaccines-info {
+  background: green;
+  color: white;
+  text-align: center;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  max-width: 600px;
+  border-radius: 10px;
+  padding: 1rem 0;
+  margin: 1rem;
+}
+
+@media screen and (min-width: 768px) {
+  .covid {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .card-button {
+    padding: 3rem;
+  }
+  .card-button h4 {
+    font-size: 1.4rem;
+    letter-spacing: 0.05rem;
+    font-weight: 400;
+  }
+
+  .card-button p {
+    font-size: 1.4rem;
+  }
+  .card-top h3 {
+    font-size: 5rem;
+  }
+  .vaccines-info {
+    margin: 0 auto;
+  }
+}
+
+@keyframes pulsing {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
