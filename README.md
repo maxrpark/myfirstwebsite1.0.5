@@ -21,4 +21,4 @@ I use this [API](https://github.com/M-Media-Group/Covid-19-API).
 This website show updated Argentina COVID 19 report.
 
 ## Visit the website
-You can visit the website clicking [Here](https://myfirstwebsite-1-0-5.netlify.app//)
+You can visit the website clicking [Here](https://myfirstwebsite1-0-5.netlify.app//)
